@@ -1,6 +1,24 @@
 
-/* search*/
+/* formatting and styling top*/ 
 
+.header-container {
+color: #ffffff;
+font-family:'Courier New', Courier, monospace;
+background-color: #383737;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.option-container {
+color: #f8f8fa;
+background-color: #4c53dd;
+font-family:'Courier New', Courier, monospace;
+}
+
+/* search*/
 .card-content {
   padding: 2%;
 }
@@ -10,15 +28,24 @@
 }
 
 input {
-  border: 2px solid grey;
+  border: 2px solid rgb(124, 135, 236);
   font-size: 1rem;
   width: 80%;
-  height: 1rem;
+  height: 2rem;
   border-radius: 25px;
   margin-bottom: 3rem;
   padding: 1rem;
 }
 
+button {
+  border-radius: 11px;
+  width: 130px;
+  height: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/*media queries*/
 
 /* Tablet */
   @media screen and (min-width: 768px) {
@@ -47,21 +74,24 @@ input {
     }
   }
 
+
 /* this is for the cards and api*/
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    color: rgb(20, 21, 21);
 }
 
 .card {
-    width: calc(40% - 20px); /* Three cards per row, with some spacing */
+    width: calc(40% - 20px);
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(1, 1, 1, 0.1);
     overflow: hidden;
+    color: #024892;
+    background-color: #2f3338;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .card-img-top {
@@ -72,6 +102,8 @@ input {
 
 .card-body {
     padding: 20px;
+    color: #f2f2f4;
+    background-color: #2f3338;
 }
 
 .card-title {
@@ -81,14 +113,14 @@ input {
 
 .card-text {
     font-size: 1rem;
-    color: #4b5258;
+    color: #f1f4f7;
     margin-bottom: 15px;
 }
 
 .btn {
     display: inline-block;
     background-color: #007bff;
-    color: #f6f3f3;
+    color: #f7f8fa;
     padding: 8px 16px;
     border: none;
     border-radius: 4px;
@@ -98,5 +130,6 @@ input {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #024892;
 }
+
